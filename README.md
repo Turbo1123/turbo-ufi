@@ -1,8 +1,8 @@
 # Turbo UFI
 
-**某兴 U30 Air 的开源 iPhone 管理端。** Turbo UFI 基于 SwiftUI 和 UFI-TOOLS，让你在 iPhone 上管理随身 Wi-Fi（Mobile Wi-Fi / MiFi），查看 4G/5G 网络和客户端，切换 Mihomo / Clash Meta 节点，控制 Tailscale，还能操作设备内置的 Android 桌面。
+**某兴 U30 Air 的开源 iPhone 管理端。** Turbo UFI 基于 SwiftUI 和 UFI-TOOLS，让你在 iPhone 上管理随身 Wi-Fi（Mobile Wi-Fi / MiFi），查看 4G/5G 网络和客户端，控制 Tailscale，还能操作设备内置的 Android 桌面。
 
-**Open-source iOS companion for the U30 Air and UFI-TOOLS.** Manage your mobile hotspot, inspect cellular signals and clients, switch Mihomo / Clash Meta nodes, control Tailscale, and use the hotspot’s Android desktop from your iPhone.
+**Open-source iOS companion for the U30 Air and UFI-TOOLS.** Manage your mobile hotspot, inspect cellular signals and clients, control Tailscale, and use the hotspot’s Android desktop from your iPhone.
 
 [下载 IPA](https://github.com/Turbo1123/turbo-ufi/releases/latest) · [从源码构建](#从源码构建) · [English quick start](#english-quick-start)
 
@@ -44,7 +44,6 @@ U30 Air 内置 Android。完成一次可信配对后，iPhone 就能通过热点
 ## 主要功能
 
 - **设备与网络** 实时网速、USB 连接、4G/5G 信号、温度、设备属性和流量。可管理 Wi-Fi、LAN / DHCP、APN 以及在线客户端。
-- **代理** 设备安装猫猫 TProxy Plus 后显示代理页。可启停 Mihomo、管理开机自启、测速、搜索和切换节点。
 - **Tailscale** 查看设备端 VPN 状态、IPv4、IPv6、MagicDNS 和版本。登录后的客户端可在 Turbo UFI 内连接或断开。
 - **系统管理** 插件导入和导出、定时任务、短信和转发、局域网与蜂窝测速、UFI-TOOLS 更新。重启、关机等操作会要求确认。
 - **凭据管理** 可把设备口令保存在 iOS 钥匙串。在 App 内打开原后台时可复用设备凭据。
@@ -55,7 +54,7 @@ U30 Air 内置 Android。完成一次可信配对后，iPhone 就能通过热点
 2. 输入设备的 UFI-TOOLS 地址和口令。常见默认地址为 `192.168.0.1:2333`。也可在连接页进入演示模式。
 3. 如要使用 Android 桌面，需先在设备端配置 [ScreenBridge](ScreenBridge/)。Tailscale 管理需设备端安装 Tailscale，并完成登录及 Android VPN 授权。
 
-已验证机型为 **U30 Air B14**，设备端使用 **UFI-TOOLS 完整版 4.1.5**。代理功能已验证猫猫 TProxy Plus 与 Mihomo。其他机型或固件的接口支持情况可能不同。
+已验证机型为 **U30 Air B14**，设备端使用 **UFI-TOOLS 完整版 4.1.5**。其他机型或固件的接口支持情况可能不同。
 
 ## 安装 IPA
 
@@ -80,6 +79,6 @@ Open `TurboUFI.xcodeproj` to build with Xcode. The IPA in GitHub Releases is uns
 
 ## 致谢与许可
 
-感谢 [Minikano（kanoqwq）](https://github.com/kanoqwq) 开源 [UFI-TOOLS](https://github.com/kanoqwq/UFI-TOOLS) 和 [设备端 API 文档](https://github.com/kanoqwq/UFI-TOOLS/blob/http-server-version/API_Doc.md)。也感谢 [猫猫 TProxy Plus](https://github.com/miofelix/maomao-tproxy-plus)、[Mihomo](https://github.com/MetaCubeX/mihomo) 和 [Tailscale](https://tailscale.com/) 项目。
+感谢 [Minikano（kanoqwq）](https://github.com/kanoqwq) 开源 [UFI-TOOLS](https://github.com/kanoqwq/UFI-TOOLS) 和 [设备端 API 文档](https://github.com/kanoqwq/UFI-TOOLS/blob/http-server-version/API_Doc.md)。也感谢 [Tailscale](https://tailscale.com/) 项目。
 
 Turbo UFI 由 [Turbo1123](https://github.com/Turbo1123) 维护，采用 [MIT License](LICENSE)。UFI-TOOLS 的版权声明与许可见 [Licenses/UFI-TOOLS-MIT.txt](Licenses/UFI-TOOLS-MIT.txt)。
