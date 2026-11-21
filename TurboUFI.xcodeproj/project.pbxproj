@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E80FBD58C44CDB7C6FD6E2 /* DevicePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65528348CC499B0B681A28D9 /* DevicePages.swift */; };
+		0514CB4B82757C27004BDAA4 /* ProxyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2316E38DFE2E2DD8D039B5B /* ProxyGroup.swift */; };
+		1A765B42CE7AE3D43B472AFB /* RouterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47072D42AE8D84025B417E61 /* RouterSettings.swift */; };
+		278EE2FDA3FABD128935B6AC /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9A0A8CBC9B8C755F1BDB8F /* AppScreen.swift */; };
+		29F7ABB7C1A2111157B9FEDC /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B685E814D61C270D6981136D /* DeviceMonitoring.swift */; };
+		36C291E7DD8A9C452B812347 /* ScheduledTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1537BFD7941F52B9093A375 /* ScheduledTasks.swift */; };
+		41B71C3D57C37D2B43D25D16 /* ManagementBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA3CC664D7D7744A97A269 /* ManagementBrowser.swift */; };
+		44EF9FB8E1827B3738439874 /* DeviceControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E553EE324B5E1ED5E3B150 /* DeviceControls.swift */; };
+		4DE5A59421EA9FC34526E1A2 /* UFIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D780D0F92CDAF782E3749AD9 /* UFIClient.swift */; };
+		5B413988DA5B2E65760553EA /* ForwardingEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28270A33A2FB3E9EF526346 /* ForwardingEditor.swift */; };
+		64A42C137A8AC4AD6D75DDB5 /* AdvancedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF344F6E164CE5BD43FA0464 /* AdvancedScreen.swift */; };
+		7CC3055E7F8D19591A7642CD /* AndroidDesktop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70A2D3FDC0AF0EA92FAC56 /* AndroidDesktop.swift */; };
+		8019DD90215399E4DD6AC8A5 /* AdvancedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A35DD39C06684F6A50DF5 /* AdvancedData.swift */; };
+		80A4B5CF4D1A27AEBDEB048F /* TailscaleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65157BB5DB4632B56FA305C /* TailscaleScreen.swift */; };
+		94645EC3464E49B6829AB96B /* NativeRouterScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF311136AF788F3B004326F /* NativeRouterScreens.swift */; };
+		95FD49C21FB0378402B20AB2 /* ClientAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88AC920EE6772081B8C1600 /* ClientAccess.swift */; };
+		A26730BE74A426877404217B /* UsageEditors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB9A2A2CC8B9B87A4BE363A /* UsageEditors.swift */; };
+		A37E54F501A9646D4EEF77A0 /* RouterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65D3E15F2F4A440E206910D /* RouterAPI.swift */; };
+		A8A6D4B246A3BD36E04D530E /* RadioSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60675B184937AD7CD9BF5DFA /* RadioSettings.swift */; };
+		AA155D2AA91955A9D6DB3299 /* SpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F096F79F2C20937EA260FABB /* SpeedTest.swift */; };
+		ABF080DE294BA624F5746183 /* SoftwareUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEE38269A0E2E7E6015CBF0 /* SoftwareUpdate.swift */; };
+		B1C3FBB4EF2AC97B779E9A4F /* DeviceCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50101EA808990DEDAC42799A /* DeviceCredentials.swift */; };
+		C230E0493A4833913AA8D3C4 /* APNEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870133E9AE7E9E5458AE1EFD /* APNEditor.swift */; };
+		C7EBB164EAEF737C71CFBF4B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824CBB5E5E95922501C32E96 /* DesignSystem.swift */; };
+		C8191E408D250E4E26E0A77C /* TurboUFIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86848352BC81992B5115F572 /* TurboUFIApp.swift */; };
+		D5B2BB80D7BCAB83D93B8C52 /* ScreenConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D46DA0F4D4E2B6AE9F3340 /* ScreenConnection.swift */; };
+		D89E1ADB2AF1508D05847DF0 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7A34194271E97E0FA192D /* AboutScreen.swift */; };
+		D92165E2BEF05A802EAF15A0 /* ProxyGroupsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C02C68379B90C4761F36A /* ProxyGroupsSection.swift */; };
+		DF0371A56B19B353B2BB180C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFEDF9FC40D140D4E2C0377 /* Assets.xcassets */; };
+		E060E9CC2D34EA56C56A9C43 /* PluginManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2FB5ECCC2A226948D09C9 /* PluginManagement.swift */; };
+		F05C5D9C7B1B32FF76B948EE /* OverviewDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F7C144E7B777A3CF079FE /* OverviewDetails.swift */; };
+		F5F9851624C24D2010F19A82 /* ManagementFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB89622173D8EAB5A1BFDBA /* ManagementFeature.swift */; };
+		FD5448AB9BD020DE8D8F5F33 /* ForwardingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C28A3D0997CD2B86CA35CD /* ForwardingControls.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CEE38269A0E2E7E6015CBF0 /* SoftwareUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdate.swift; sourceTree = "<group>"; };
+		47072D42AE8D84025B417E61 /* RouterSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSettings.swift; sourceTree = "<group>"; };
+		48C28A3D0997CD2B86CA35CD /* ForwardingControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardingControls.swift; sourceTree = "<group>"; };
+		50101EA808990DEDAC42799A /* DeviceCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCredentials.swift; sourceTree = "<group>"; };
+		50F7A34194271E97E0FA192D /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
+		51AA3CC664D7D7744A97A269 /* ManagementBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementBrowser.swift; sourceTree = "<group>"; };
+		53D46DA0F4D4E2B6AE9F3340 /* ScreenConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenConnection.swift; sourceTree = "<group>"; };
+		60675B184937AD7CD9BF5DFA /* RadioSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioSettings.swift; sourceTree = "<group>"; };
+		65528348CC499B0B681A28D9 /* DevicePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePages.swift; sourceTree = "<group>"; };
+		6C9A0A8CBC9B8C755F1BDB8F /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
+		6DF311136AF788F3B004326F /* NativeRouterScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeRouterScreens.swift; sourceTree = "<group>"; };
+		824CBB5E5E95922501C32E96 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		86848352BC81992B5115F572 /* TurboUFIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboUFIApp.swift; sourceTree = "<group>"; };
+		870133E9AE7E9E5458AE1EFD /* APNEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNEditor.swift; sourceTree = "<group>"; };
+		933C02C68379B90C4761F36A /* ProxyGroupsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyGroupsSection.swift; sourceTree = "<group>"; };
+		9B70A2D3FDC0AF0EA92FAC56 /* AndroidDesktop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidDesktop.swift; sourceTree = "<group>"; };
+		AEB89622173D8EAB5A1BFDBA /* ManagementFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementFeature.swift; sourceTree = "<group>"; };
+		B2316E38DFE2E2DD8D039B5B /* ProxyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyGroup.swift; sourceTree = "<group>"; };
+		B685E814D61C270D6981136D /* DeviceMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitoring.swift; sourceTree = "<group>"; };
+		B8DB2F441EC835FA6B6570DF /* TurboUFI.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TurboUFI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB9A2A2CC8B9B87A4BE363A /* UsageEditors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageEditors.swift; sourceTree = "<group>"; };
+		BF344F6E164CE5BD43FA0464 /* AdvancedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedScreen.swift; sourceTree = "<group>"; };
+		C88AC920EE6772081B8C1600 /* ClientAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAccess.swift; sourceTree = "<group>"; };
+		D13A35DD39C06684F6A50DF5 /* AdvancedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedData.swift; sourceTree = "<group>"; };
+		D65D3E15F2F4A440E206910D /* RouterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAPI.swift; sourceTree = "<group>"; };
+		D780D0F92CDAF782E3749AD9 /* UFIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFIClient.swift; sourceTree = "<group>"; };
+		D9E553EE324B5E1ED5E3B150 /* DeviceControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceControls.swift; sourceTree = "<group>"; };
+		DBFEDF9FC40D140D4E2C0377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3E2FB5ECCC2A226948D09C9 /* PluginManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginManagement.swift; sourceTree = "<group>"; };
+		E93F7C144E7B777A3CF079FE /* OverviewDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewDetails.swift; sourceTree = "<group>"; };
+		F096F79F2C20937EA260FABB /* SpeedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTest.swift; sourceTree = "<group>"; };
+		F1537BFD7941F52B9093A375 /* ScheduledTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledTasks.swift; sourceTree = "<group>"; };
+		F28270A33A2FB3E9EF526346 /* ForwardingEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardingEditor.swift; sourceTree = "<group>"; };
+		F65157BB5DB4632B56FA305C /* TailscaleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailscaleScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		931C8E6304B87DA45C095662 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				50F7A34194271E97E0FA192D /* AboutScreen.swift */,
+				D13A35DD39C06684F6A50DF5 /* AdvancedData.swift */,
+				BF344F6E164CE5BD43FA0464 /* AdvancedScreen.swift */,
+				9B70A2D3FDC0AF0EA92FAC56 /* AndroidDesktop.swift */,
+				870133E9AE7E9E5458AE1EFD /* APNEditor.swift */,
+				6C9A0A8CBC9B8C755F1BDB8F /* AppScreen.swift */,
+				C88AC920EE6772081B8C1600 /* ClientAccess.swift */,
+				824CBB5E5E95922501C32E96 /* DesignSystem.swift */,
+				D9E553EE324B5E1ED5E3B150 /* DeviceControls.swift */,
+				50101EA808990DEDAC42799A /* DeviceCredentials.swift */,
+				B685E814D61C270D6981136D /* DeviceMonitoring.swift */,
+				65528348CC499B0B681A28D9 /* DevicePages.swift */,
+				48C28A3D0997CD2B86CA35CD /* ForwardingControls.swift */,
+				F28270A33A2FB3E9EF526346 /* ForwardingEditor.swift */,
+				51AA3CC664D7D7744A97A269 /* ManagementBrowser.swift */,
+				AEB89622173D8EAB5A1BFDBA /* ManagementFeature.swift */,
+				6DF311136AF788F3B004326F /* NativeRouterScreens.swift */,
+				E93F7C144E7B777A3CF079FE /* OverviewDetails.swift */,
+				E3E2FB5ECCC2A226948D09C9 /* PluginManagement.swift */,
+				B2316E38DFE2E2DD8D039B5B /* ProxyGroup.swift */,
+				933C02C68379B90C4761F36A /* ProxyGroupsSection.swift */,
+				60675B184937AD7CD9BF5DFA /* RadioSettings.swift */,
+				D65D3E15F2F4A440E206910D /* RouterAPI.swift */,
+				47072D42AE8D84025B417E61 /* RouterSettings.swift */,
+				F1537BFD7941F52B9093A375 /* ScheduledTasks.swift */,
+				53D46DA0F4D4E2B6AE9F3340 /* ScreenConnection.swift */,
+				0CEE38269A0E2E7E6015CBF0 /* SoftwareUpdate.swift */,
+				F096F79F2C20937EA260FABB /* SpeedTest.swift */,
+				F65157BB5DB4632B56FA305C /* TailscaleScreen.swift */,
+				86848352BC81992B5115F572 /* TurboUFIApp.swift */,
+				D780D0F92CDAF782E3749AD9 /* UFIClient.swift */,
+				BEB9A2A2CC8B9B87A4BE363A /* UsageEditors.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9D68EC3D9A356F33F15905C6 = {
+			isa = PBXGroup;
+			children = (
+				B283490CABD5AEDB8A68B611 /* Resources */,
+				931C8E6304B87DA45C095662 /* Sources */,
+				F8A84C411DDD2D2E262E252B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B283490CABD5AEDB8A68B611 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBFEDF9FC40D140D4E2C0377 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8A84C411DDD2D2E262E252B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8DB2F441EC835FA6B6570DF /* TurboUFI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CFAE133118EE64EC861C637 /* TurboUFI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A587F168B95776B41FDD9479 /* Build configuration list for PBXNativeTarget "TurboUFI" */;
+			buildPhases = (
+				EC7FEE08616EAB6628DA4E23 /* Sources */,
+				D6698A558DCC4433D1EDAC23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurboUFI;
+			packageProductDependencies = (
+			);
+			productName = TurboUFI;
+			productReference = B8DB2F441EC835FA6B6570DF /* TurboUFI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BEAA0E6FCACB19DAFCEB8A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 8CB8BF78F3FA9357638C6AC3 /* Build configuration list for PBXProject "TurboUFI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9D68EC3D9A356F33F15905C6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F8A84C411DDD2D2E262E252B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CFAE133118EE64EC861C637 /* TurboUFI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6698A558DCC4433D1EDAC23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0371A56B19B353B2BB180C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC7FEE08616EAB6628DA4E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C230E0493A4833913AA8D3C4 /* APNEditor.swift in Sources */,
+				D89E1ADB2AF1508D05847DF0 /* AboutScreen.swift in Sources */,
+				8019DD90215399E4DD6AC8A5 /* AdvancedData.swift in Sources */,
+				64A42C137A8AC4AD6D75DDB5 /* AdvancedScreen.swift in Sources */,
+				7CC3055E7F8D19591A7642CD /* AndroidDesktop.swift in Sources */,
+				278EE2FDA3FABD128935B6AC /* AppScreen.swift in Sources */,
+				95FD49C21FB0378402B20AB2 /* ClientAccess.swift in Sources */,
+				C7EBB164EAEF737C71CFBF4B /* DesignSystem.swift in Sources */,
+				44EF9FB8E1827B3738439874 /* DeviceControls.swift in Sources */,
+				B1C3FBB4EF2AC97B779E9A4F /* DeviceCredentials.swift in Sources */,
+				29F7ABB7C1A2111157B9FEDC /* DeviceMonitoring.swift in Sources */,
+				04E80FBD58C44CDB7C6FD6E2 /* DevicePages.swift in Sources */,
+				FD5448AB9BD020DE8D8F5F33 /* ForwardingControls.swift in Sources */,
+				5B413988DA5B2E65760553EA /* ForwardingEditor.swift in Sources */,
+				41B71C3D57C37D2B43D25D16 /* ManagementBrowser.swift in Sources */,
+				F5F9851624C24D2010F19A82 /* ManagementFeature.swift in Sources */,
+				94645EC3464E49B6829AB96B /* NativeRouterScreens.swift in Sources */,
+				F05C5D9C7B1B32FF76B948EE /* OverviewDetails.swift in Sources */,
+				E060E9CC2D34EA56C56A9C43 /* PluginManagement.swift in Sources */,
+				0514CB4B82757C27004BDAA4 /* ProxyGroup.swift in Sources */,
+				D92165E2BEF05A802EAF15A0 /* ProxyGroupsSection.swift in Sources */,
+				A8A6D4B246A3BD36E04D530E /* RadioSettings.swift in Sources */,
+				A37E54F501A9646D4EEF77A0 /* RouterAPI.swift in Sources */,
+				1A765B42CE7AE3D43B472AFB /* RouterSettings.swift in Sources */,
+				36C291E7DD8A9C452B812347 /* ScheduledTasks.swift in Sources */,
+				D5B2BB80D7BCAB83D93B8C52 /* ScreenConnection.swift in Sources */,
+				ABF080DE294BA624F5746183 /* SoftwareUpdate.swift in Sources */,
+				AA155D2AA91955A9D6DB3299 /* SpeedTest.swift in Sources */,
+				80A4B5CF4D1A27AEBDEB048F /* TailscaleScreen.swift in Sources */,
+				C8191E408D250E4E26E0A77C /* TurboUFIApp.swift in Sources */,
+				4DE5A59421EA9FC34526E1A2 /* UFIClient.swift in Sources */,
+				A26730BE74A426877404217B /* UsageEditors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F284044285CBFD85490ABB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 11;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.5.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		11CF6AB3A851E09843DAE359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 11;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.5.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1546507C1E985DF841F6C063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turbo.ufi;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75C21CB3611A32AC427EB987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turbo.ufi;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CB8BF78F3FA9357638C6AC3 /* Build configuration list for PBXProject "TurboUFI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11CF6AB3A851E09843DAE359 /* Debug */,
+				0F284044285CBFD85490ABB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A587F168B95776B41FDD9479 /* Build configuration list for PBXNativeTarget "TurboUFI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1546507C1E985DF841F6C063 /* Debug */,
+				75C21CB3611A32AC427EB987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BEAA0E6FCACB19DAFCEB8A3 /* Project object */;
+}
