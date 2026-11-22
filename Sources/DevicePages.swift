@@ -39,7 +39,16 @@ struct OverviewScreen: View {
             LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
                 ValueTile(label: "设备电量", value: formatMetric(device.battery, suffix: "%"), icon: "battery.75percent")
                 ValueTile(label: "最高温度", value: formatMetric(device.temperature, suffix: " °C", digits: 1), icon: "thermometer.medium")
-                ValueTile(label: "接入设备", value: device.clients.map { "\($0.count) 台" } ?? "—", icon: "person.2")
+                Button {
+                    model.destination = .clients
+                } label: {
+                    ValueTile(label: "接入设备", value: device.clients.map { "\($0.count) 台" } ?? "—",
+                              icon: "person.2", showsChevron: true)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityHint("打开设备列表")
+                .accessibilityIdentifier("overview-connected-devices")
                 ValueTile(label: "本月流量", value: formatBytes(device.base.number("monthly_data")), icon: "chart.bar.xaxis")
             }
 
@@ -518,6 +527,7 @@ struct ProxyScreen: View {
 
 struct SettingsScreen: View {
     @EnvironmentObject private var model: AppModel
+    @AppStorage(TurboWiFiReminder.enabledKey) private var wifiReminder = true
     @State private var confirm = false
     @State private var editingAlias = false
     @State private var alias = ""
@@ -563,6 +573,18 @@ struct SettingsScreen: View {
             }
             if let aliasIssue { InlineNotice(text: aliasIssue, icon: "exclamationmark.circle") }
 
+            Card {
+                VStack(alignment: .leading, spacing: 8) {
+                    Toggle("Turbo Wi-Fi 连接提醒", isOn: $wifiReminder)
+                        .font(.subheadline.weight(.semibold))
+                        .disabled(model.demo)
+                    Text("连接随身热点时显示在灵动岛和锁屏。可在快捷指令中设置 Wi-Fi 自动化，运行「检查 Turbo Wi-Fi」。")
+                        .font(.caption)
+                        .foregroundStyle(Palette.muted)
+                }
+                .padding(15)
+            }
+
             Text("维护").font(.headline).accessibilityAddTraits(.isHeader)
             Card {
                 VStack(spacing: 0) {
@@ -605,6 +627,7 @@ struct SettingsScreen: View {
             }
         }
         .buttonStyle(.plain)
+        .onChange(of: wifiReminder) { _, _ in Task { await TurboWiFiReminder.shared.preferenceChanged() } }
         .fullScreenCover(isPresented: $showingAbout) { AboutScreen() }
         .confirmationDialog(model.demo ? "退出演示？" : "断开设备连接？", isPresented: $confirm, titleVisibility: .visible) {
             Button(model.demo ? "退出" : "断开", role: .destructive) { model.disconnect() }

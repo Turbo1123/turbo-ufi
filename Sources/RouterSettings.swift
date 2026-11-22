@@ -18,7 +18,7 @@ struct WiFiProfile: Identifiable {
 
     init?(_ values: JSONObject) {
         guard values.text("AccessPointSwitchStatus") == "1", let chip = values.text("ChipIndex"),
-              let accessPoint = values.text("AccessPointIndex"), let name = values.text("SSID"),
+              let accessPoint = values.text("AccessPointIndex"), let name = values.raw["SSID"] as? String, !name.isEmpty,
               let auth = values.text("AuthMode"), let maximum = values.text("ApMaxStationNumber") else { return nil }
         self.chip = chip
         self.accessPoint = accessPoint

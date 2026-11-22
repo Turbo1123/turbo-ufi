@@ -41,9 +41,11 @@ U30 Air 内置 Android。完成一次可信配对后，iPhone 就能通过热点
 
 截图使用演示数据或已检查的 Android 界面。
 
+<img src="docs/screenshots/wifi-qr.png" alt="Turbo UFI 显示演示热点的 Wi-Fi 入网二维码" width="210">
+
 ## 主要功能
 
-- **设备与网络** 实时网速、USB 连接、4G/5G 信号、温度、设备属性和流量。可管理 Wi-Fi、LAN / DHCP、APN 以及在线客户端。
+- **设备与网络** 实时网速、USB 连接、4G/5G 信号、温度、设备属性和流量。可管理 Wi-Fi、LAN / DHCP、APN 以及在线客户端。首页可通过接入设备数量打开设备列表，还能显示热点入网二维码，供 iPhone 和安卓手机扫码加入。
 - **Tailscale** 查看设备端 VPN 状态、IPv4、IPv6、MagicDNS 和版本。登录后的客户端可在 Turbo UFI 内连接或断开。
 - **系统管理** 插件导入和导出、定时任务、短信和转发、局域网与蜂窝测速、UFI-TOOLS 更新。重启、关机等操作会要求确认。
 - **凭据管理** 可把设备口令保存在 iOS 钥匙串。在 App 内打开原后台时可复用设备凭据。
@@ -56,6 +58,14 @@ U30 Air 内置 Android。完成一次可信配对后，iPhone 就能通过热点
 
 已验证机型为 **U30 Air B14**，设备端使用 **UFI-TOOLS 完整版 4.1.5**。其他机型或固件的接口支持情况可能不同。
 
+### 灵动岛与锁屏提醒
+
+在 Turbo UFI 成功连接一次随身热点后，App 会记住设备地址和型号。当前 Wi-Fi 网关匹配且设备响应通过核对时，灵动岛和锁屏会提示「已连接 Turbo Wi-Fi」。可在 App 的「设置」关闭提醒。
+
+要在 App 未打开时检查，请在「快捷指令 → 自动化」新建 Wi-Fi 自动化，选择「任意网络」和「立即运行」，添加 Turbo UFI 的「检查 Turbo Wi-Fi」动作。这样连进随身热点时可开启提醒，连进其他 Wi-Fi 时也能结束旧提醒。常常到家却继续连着随身热点的用户，可额外让同一动作在「到达家」时运行。
+
+App 被挂起后，iOS 可能暂时无法运行网络检查。超过 90 秒没复核时，提醒显示「待复核」。实时活动受 iOS 的时长限制。
+
 ## 安装 IPA
 
 [GitHub Releases](https://github.com/Turbo1123/turbo-ufi/releases/latest) 提供 **未签名 IPA** 和 SHA-256 校验文件。安装时请使用你自己的 Apple 开发者签名与描述文件，或按下面的步骤从源码构建。
@@ -64,7 +74,7 @@ U30 Air 内置 Android。完成一次可信配对后，iPhone 就能通过热点
 
 - 使用支持 iOS 17 或更新版本 SDK 的 Xcode 打开 `TurboUFI.xcodeproj`。
 - 选择 `TurboUFI` scheme 运行模拟器。App 无第三方 Swift 包依赖。
-- 真机运行时，在 Signing & Capabilities 中选择自己的签名团队和可用的 Bundle Identifier。
+- 真机运行时，为 App 与实时活动扩展选择自己的签名团队，并在项目的构建设置中设置 `TURBO_UFI_BUNDLE_ID`，两个目标会使用同一前缀。
 - 修改 `project.yml` 后可通过 `xcodegen generate` 更新工程。
 
 ### Android 桌面桥接

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct AppScreen: View {
     @EnvironmentObject private var model: AppModel
+    @State private var showingWiFiQRCode = false
 
     var body: some View {
         Group {
@@ -32,6 +33,9 @@ struct AppScreen: View {
         .foregroundStyle(Palette.ink)
         .background(Palette.paper.ignoresSafeArea())
         .tint(Palette.green)
+        .sheet(isPresented: $showingWiFiQRCode) {
+            WiFiQRCodeSheet()
+        }
         .fullScreenCover(item: $model.browser, onDismiss: { Task { await model.managementClosed() } }) { page in
             if let endpoint = model.endpoint {
                 ManagementBrowser(page: page, endpoint: endpoint, dataStore: model.browserData,
@@ -61,6 +65,18 @@ struct AppScreen: View {
             Text("Turbo UFI").font(.system(size: 19, weight: .heavy, design: .default)).tracking(-0.55)
             Spacer()
             if model.demo { StatusChip(text: "演示", filled: false) }
+            if model.destination == .overview {
+                Button { showingWiFiQRCode = true } label: {
+                    Image(systemName: "qrcode")
+                        .font(.system(size: 18, weight: .semibold))
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(Palette.green)
+                .accessibilityLabel("Wi-Fi 二维码")
+                .accessibilityIdentifier("wifi-qr-button")
+            }
             Button {
                 Task {
                     await model.refresh()

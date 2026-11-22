@@ -19,6 +19,10 @@ struct TurboUFIApp: App {
                     guard scenePhase == .active, model.destination == .overview else { return }
                     await model.pollOverview()
                 }
+                .task(id: scenePhase == .active) {
+                    guard scenePhase == .active else { return }
+                    await TurboWiFiReminder.shared.watchWhileActive()
+                }
                 #if DEBUG
                 .task { await model.launchForVerification() }
                 #endif
@@ -125,6 +129,9 @@ final class AppModel: ObservableObject {
             accept(snapshot)
             if rememberAddress { UserDefaults.standard.set(endpoint.address, forKey: "lastDeviceAddress") }
             session = UUID()
+            if rememberAddress {
+                await TurboWiFiReminder.shared.register(endpoint: endpoint, model: snapshot.model)
+            }
             await refreshPluginAvailability()
         } catch is CancellationError {
         } catch {

@@ -16,10 +16,14 @@
 		41B71C3D57C37D2B43D25D16 /* ManagementBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA3CC664D7D7744A97A269 /* ManagementBrowser.swift */; };
 		44EF9FB8E1827B3738439874 /* DeviceControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E553EE324B5E1ED5E3B150 /* DeviceControls.swift */; };
 		4DE5A59421EA9FC34526E1A2 /* UFIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D780D0F92CDAF782E3749AD9 /* UFIClient.swift */; };
+		51DC3C771E15B89C4F34B409 /* TurboWiFiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F615CFD8DCC76D5939C8B53 /* TurboWiFiActivity.swift */; };
 		5B413988DA5B2E65760553EA /* ForwardingEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28270A33A2FB3E9EF526346 /* ForwardingEditor.swift */; };
+		5F442BA5076D08BDF081E7F3 /* WiFiQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E99E3BE995E523E0A318852 /* WiFiQRCode.swift */; };
+		608B6D48B55DF32CB50C2209 /* TurboWiFiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F615CFD8DCC76D5939C8B53 /* TurboWiFiActivity.swift */; };
 		64A42C137A8AC4AD6D75DDB5 /* AdvancedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF344F6E164CE5BD43FA0464 /* AdvancedScreen.swift */; };
 		7CC3055E7F8D19591A7642CD /* AndroidDesktop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70A2D3FDC0AF0EA92FAC56 /* AndroidDesktop.swift */; };
 		8019DD90215399E4DD6AC8A5 /* AdvancedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A35DD39C06684F6A50DF5 /* AdvancedData.swift */; };
+		808FDC4AA187EBB45F56C860 /* TurboWiFiReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB2DA1BAF5E4490B6C3A26 /* TurboWiFiReminder.swift */; };
 		80A4B5CF4D1A27AEBDEB048F /* TailscaleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65157BB5DB4632B56FA305C /* TailscaleScreen.swift */; };
 		94645EC3464E49B6829AB96B /* NativeRouterScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF311136AF788F3B004326F /* NativeRouterScreens.swift */; };
 		95FD49C21FB0378402B20AB2 /* ClientAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88AC920EE6772081B8C1600 /* ClientAccess.swift */; };
@@ -32,8 +36,10 @@
 		C230E0493A4833913AA8D3C4 /* APNEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870133E9AE7E9E5458AE1EFD /* APNEditor.swift */; };
 		C7EBB164EAEF737C71CFBF4B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824CBB5E5E95922501C32E96 /* DesignSystem.swift */; };
 		C8191E408D250E4E26E0A77C /* TurboUFIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86848352BC81992B5115F572 /* TurboUFIApp.swift */; };
+		CB65BA217B38C1B1355CEA13 /* TurboWiFiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BF6F3BC136845A440F9D3 /* TurboWiFiWidget.swift */; };
 		D5B2BB80D7BCAB83D93B8C52 /* ScreenConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D46DA0F4D4E2B6AE9F3340 /* ScreenConnection.swift */; };
 		D89E1ADB2AF1508D05847DF0 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F7A34194271E97E0FA192D /* AboutScreen.swift */; };
+		D8F7D4DA42D899E3925790C8 /* TurboWiFiWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 75CD85D345AED035C9D9EC91 /* TurboWiFiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D92165E2BEF05A802EAF15A0 /* ProxyGroupsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933C02C68379B90C4761F36A /* ProxyGroupsSection.swift */; };
 		DF0371A56B19B353B2BB180C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFEDF9FC40D140D4E2C0377 /* Assets.xcassets */; };
 		E060E9CC2D34EA56C56A9C43 /* PluginManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2FB5ECCC2A226948D09C9 /* PluginManagement.swift */; };
@@ -41,6 +47,30 @@
 		F5F9851624C24D2010F19A82 /* ManagementFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB89622173D8EAB5A1BFDBA /* ManagementFeature.swift */; };
 		FD5448AB9BD020DE8D8F5F33 /* ForwardingControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C28A3D0997CD2B86CA35CD /* ForwardingControls.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81302D35B7789C7D486B5174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BEAA0E6FCACB19DAFCEB8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C83654F3EC973E9D8F477DC8;
+			remoteInfo = TurboWiFiWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B87D13E03930556B6CA9377 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8F7D4DA42D899E3925790C8 /* TurboWiFiWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0CEE38269A0E2E7E6015CBF0 /* SoftwareUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdate.swift; sourceTree = "<group>"; };
@@ -50,15 +80,19 @@
 		50F7A34194271E97E0FA192D /* AboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutScreen.swift; sourceTree = "<group>"; };
 		51AA3CC664D7D7744A97A269 /* ManagementBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementBrowser.swift; sourceTree = "<group>"; };
 		53D46DA0F4D4E2B6AE9F3340 /* ScreenConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenConnection.swift; sourceTree = "<group>"; };
+		5F615CFD8DCC76D5939C8B53 /* TurboWiFiActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboWiFiActivity.swift; sourceTree = "<group>"; };
 		60675B184937AD7CD9BF5DFA /* RadioSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioSettings.swift; sourceTree = "<group>"; };
 		65528348CC499B0B681A28D9 /* DevicePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePages.swift; sourceTree = "<group>"; };
 		6C9A0A8CBC9B8C755F1BDB8F /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
 		6DF311136AF788F3B004326F /* NativeRouterScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeRouterScreens.swift; sourceTree = "<group>"; };
+		6E99E3BE995E523E0A318852 /* WiFiQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiQRCode.swift; sourceTree = "<group>"; };
+		75CD85D345AED035C9D9EC91 /* TurboWiFiWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TurboWiFiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		824CBB5E5E95922501C32E96 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		86848352BC81992B5115F572 /* TurboUFIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboUFIApp.swift; sourceTree = "<group>"; };
 		870133E9AE7E9E5458AE1EFD /* APNEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNEditor.swift; sourceTree = "<group>"; };
 		933C02C68379B90C4761F36A /* ProxyGroupsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyGroupsSection.swift; sourceTree = "<group>"; };
 		9B70A2D3FDC0AF0EA92FAC56 /* AndroidDesktop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidDesktop.swift; sourceTree = "<group>"; };
+		A4EB2DA1BAF5E4490B6C3A26 /* TurboWiFiReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboWiFiReminder.swift; sourceTree = "<group>"; };
 		AEB89622173D8EAB5A1BFDBA /* ManagementFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementFeature.swift; sourceTree = "<group>"; };
 		B2316E38DFE2E2DD8D039B5B /* ProxyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyGroup.swift; sourceTree = "<group>"; };
 		B685E814D61C270D6981136D /* DeviceMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitoring.swift; sourceTree = "<group>"; };
@@ -67,6 +101,7 @@
 		BF344F6E164CE5BD43FA0464 /* AdvancedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedScreen.swift; sourceTree = "<group>"; };
 		C88AC920EE6772081B8C1600 /* ClientAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAccess.swift; sourceTree = "<group>"; };
 		D13A35DD39C06684F6A50DF5 /* AdvancedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedData.swift; sourceTree = "<group>"; };
+		D57BF6F3BC136845A440F9D3 /* TurboWiFiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurboWiFiWidget.swift; sourceTree = "<group>"; };
 		D65D3E15F2F4A440E206910D /* RouterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAPI.swift; sourceTree = "<group>"; };
 		D780D0F92CDAF782E3749AD9 /* UFIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFIClient.swift; sourceTree = "<group>"; };
 		D9E553EE324B5E1ED5E3B150 /* DeviceControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceControls.swift; sourceTree = "<group>"; };
@@ -80,6 +115,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		0C1B8312ABB4C125F1A5025B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				5F615CFD8DCC76D5939C8B53 /* TurboWiFiActivity.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		931C8E6304B87DA45C095662 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,17 +156,29 @@
 				F096F79F2C20937EA260FABB /* SpeedTest.swift */,
 				F65157BB5DB4632B56FA305C /* TailscaleScreen.swift */,
 				86848352BC81992B5115F572 /* TurboUFIApp.swift */,
+				A4EB2DA1BAF5E4490B6C3A26 /* TurboWiFiReminder.swift */,
 				D780D0F92CDAF782E3749AD9 /* UFIClient.swift */,
 				BEB9A2A2CC8B9B87A4BE363A /* UsageEditors.swift */,
+				6E99E3BE995E523E0A318852 /* WiFiQRCode.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		94207AD9A6E6746819E3A38B /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				D57BF6F3BC136845A440F9D3 /* TurboWiFiWidget.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 		9D68EC3D9A356F33F15905C6 = {
 			isa = PBXGroup;
 			children = (
 				B283490CABD5AEDB8A68B611 /* Resources */,
+				0C1B8312ABB4C125F1A5025B /* Shared */,
 				931C8E6304B87DA45C095662 /* Sources */,
+				94207AD9A6E6746819E3A38B /* Widgets */,
 				F8A84C411DDD2D2E262E252B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				B8DB2F441EC835FA6B6570DF /* TurboUFI.app */,
+				75CD85D345AED035C9D9EC91 /* TurboWiFiWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,10 +209,12 @@
 			buildPhases = (
 				EC7FEE08616EAB6628DA4E23 /* Sources */,
 				D6698A558DCC4433D1EDAC23 /* Resources */,
+				3B87D13E03930556B6CA9377 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				24D7B4BCC2C3CB02F166D805 /* PBXTargetDependency */,
 			);
 			name = TurboUFI;
 			packageProductDependencies = (
@@ -164,6 +222,23 @@
 			productName = TurboUFI;
 			productReference = B8DB2F441EC835FA6B6570DF /* TurboUFI.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C83654F3EC973E9D8F477DC8 /* TurboWiFiWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3D629E593147EA45789380 /* Build configuration list for PBXNativeTarget "TurboWiFiWidget" */;
+			buildPhases = (
+				57D3382C46BE0497B9F24763 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurboWiFiWidget;
+			packageProductDependencies = (
+			);
+			productName = TurboWiFiWidget;
+			productReference = 75CD85D345AED035C9D9EC91 /* TurboWiFiWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -191,6 +266,7 @@
 			projectRoot = "";
 			targets = (
 				2CFAE133118EE64EC861C637 /* TurboUFI */,
+				C83654F3EC973E9D8F477DC8 /* TurboWiFiWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +283,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		57D3382C46BE0497B9F24763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608B6D48B55DF32CB50C2209 /* TurboWiFiActivity.swift in Sources */,
+				CB65BA217B38C1B1355CEA13 /* TurboWiFiWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC7FEE08616EAB6628DA4E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,12 +326,23 @@
 				AA155D2AA91955A9D6DB3299 /* SpeedTest.swift in Sources */,
 				80A4B5CF4D1A27AEBDEB048F /* TailscaleScreen.swift in Sources */,
 				C8191E408D250E4E26E0A77C /* TurboUFIApp.swift in Sources */,
+				51DC3C771E15B89C4F34B409 /* TurboWiFiActivity.swift in Sources */,
+				808FDC4AA187EBB45F56C860 /* TurboWiFiReminder.swift in Sources */,
 				4DE5A59421EA9FC34526E1A2 /* UFIClient.swift in Sources */,
 				A26730BE74A426877404217B /* UsageEditors.swift in Sources */,
+				5F442BA5076D08BDF081E7F3 /* WiFiQRCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D7B4BCC2C3CB02F166D805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C83654F3EC973E9D8F477DC8 /* TurboWiFiWidget */;
+			targetProxy = 81302D35B7789C7D486B5174 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0F284044285CBFD85490ABB4 /* Release */ = {
@@ -283,7 +379,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -296,7 +392,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.5.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +400,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				TURBO_UFI_BUNDLE_ID = com.turbo.ufi;
 			};
 			name = Release;
 		};
@@ -341,7 +438,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -360,7 +457,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.5.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -369,6 +466,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TURBO_UFI_BUNDLE_ID = com.turbo.ufi;
 			};
 			name = Debug;
 		};
@@ -382,11 +480,28 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.turbo.ufi;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(TURBO_UFI_BUNDLE_ID)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		17B439F47115906FBE051C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(TURBO_UFI_BUNDLE_ID).TurboWiFiWidget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
 		};
 		75C21CB3611A32AC427EB987 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -398,11 +513,28 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.turbo.ufi;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(TURBO_UFI_BUNDLE_ID)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
+		};
+		A661D6E264D3B33A3D1E4270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(TURBO_UFI_BUNDLE_ID).TurboWiFiWidget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -421,6 +553,15 @@
 			buildConfigurations = (
 				1546507C1E985DF841F6C063 /* Debug */,
 				75C21CB3611A32AC427EB987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA3D629E593147EA45789380 /* Build configuration list for PBXNativeTarget "TurboWiFiWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A661D6E264D3B33A3D1E4270 /* Debug */,
+				17B439F47115906FBE051C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

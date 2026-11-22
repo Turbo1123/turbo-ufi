@@ -117,6 +117,18 @@ struct UFIClient: Sendable {
         }
     }
 
+    static func publicDeviceModel(at endpoint: Endpoint) async throws -> String {
+        var request = URLRequest(url: endpoint.url(path: "/api/version_info"),
+                                 cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 3)
+        request.allowsCellularAccess = false
+        let (data, _) = try await UFIClient(endpoint: endpoint, token: "").send(request)
+        let version = try parseJSONObject(data)
+        guard version.text("app_ver") != nil, let model = version.text("model") else {
+            throw ConnectionError.invalidResponse
+        }
+        return model
+    }
+
     func readRates() async throws -> RateSample {
         let value = try await request("/api/goform/goform_get_cmd_process", query: [
             .init(name: "multi_data", value: "1"), .init(name: "isTest", value: "false"),

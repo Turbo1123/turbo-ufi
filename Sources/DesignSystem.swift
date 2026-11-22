@@ -109,6 +109,7 @@ struct ValueTile: View {
     let label: String
     let value: String
     let icon: String
+    var showsChevron = false
 
     var body: some View {
         Card {
@@ -124,6 +125,13 @@ struct ValueTile: View {
                         .font(.system(.title3, design: .monospaced).weight(.bold))
                         .lineLimit(1).minimumScaleFactor(0.62)
                     Text(label).font(.caption).foregroundStyle(Palette.muted)
+                }
+                if showsChevron {
+                    Spacer(minLength: 0)
+                    Image(systemName: "chevron.right")
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(Palette.muted)
+                        .accessibilityHidden(true)
                 }
             }
             .padding(12)
